@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "v/WWzcJncDj+MODbAVzeghX6HJyZBkmwyNUxYKt+pAYwds1t8mqLqtabSo1zqEfibdATRBNX0GP5k0uVh9g2kw==",
+  "dgSpecHash": "gVtqpexMB8zhcW1fDRPs9N0LgKg8cdyUDixeXEH0Wnpg9pI1s9ZMO31GCyef+soGl4R7+vIrCr71uBVGTltE2A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\admin\\source\\repos\\AttendanceSystem\\AttendanceSystem\\AttendanceSystem.csproj",
+  "projectFilePath": "C:\\Users\\admin\\Documents\\GitHub\\ASP.NET_AttendanceSystem\\AttendanceSystem\\AttendanceSystem\\AttendanceSystem.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
