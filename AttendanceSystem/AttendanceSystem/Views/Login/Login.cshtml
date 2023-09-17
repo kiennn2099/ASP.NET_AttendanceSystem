@@ -1,0 +1,10 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers;
+
+<form action="/Login/Login" method="Post">
+    Id : <input type="text" name="user" id="user"><br />
+    Pass : <input type="password" name="password" id="password" /><br />
+    <input type="submit" value="Login" /><br />
+    @ViewBag.ErrorMessage0
+    @ViewBag.ErrorMessage
+</form>
+
