@@ -1,0 +1,67 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Thời khóa biểu Sinh viên</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Thời khóa biểu Sinh viên</h1>
+
+    <table>
+        <tr>
+            <th>Thứ 2</th>
+            <th>Thứ 3</th>
+            <th>Thứ 4</th>
+            <th>Thứ 5</th>
+            <th>Thứ 6</th>
+        </tr>
+        @foreach (var schedule in @ViewBag.Schedule)
+        {
+            <tr>
+                <td>@if (schedule.DateTime.DayOfWeek == DayOfWeek.Monday)
+                    {
+                        @schedule.DateTime.ToShortDateString()
+                    }</td>
+                <td>
+                    @if (schedule.DateTime.DayOfWeek == DayOfWeek.Tuesday)
+                    {
+                        @schedule.DateTime.ToShortDateString()
+                    }</td>
+                <td>
+                    @if (schedule.DateTime.DayOfWeek == DayOfWeek.Wednesday)
+                    {
+                        @schedule.DateTime.ToShortDateString()
+                    }</td>
+                <td>
+                    @if (schedule.DateTime.DayOfWeek == DayOfWeek.Thursday)
+                    {
+                        @schedule.DateTime.ToShortDateString()
+                    }</td>
+                <td>
+                    @if (schedule.DateTime.DayOfWeek == DayOfWeek.Friday)
+                    {
+                        @schedule.Slot <br />
+                        @schedule.DateTime.ToShortDateString() <br />
+                        @schedule.SubjectName
+                    }</td>
+            </tr>
+        }
+    </table>
+</body>
+</html>
